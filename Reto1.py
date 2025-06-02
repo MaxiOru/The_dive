@@ -84,6 +84,7 @@ def movimiento_del_gato(tablero, xg, yg, turno):
 
 # INICIO DEL JUEGO
 dimension = int(input("Ingrese la cantidad de filas del tablero: "))
+dimension=7
 tablero = [["⬜" for _ in range(dimension)] for _ in range(dimension)]
 
 # POSICIONES INICIALES
@@ -110,7 +111,7 @@ while True:
     if (xr, yr) == (xg, yg) :
         print("¡El gato atrapó al ratón! 🐱🏁")
         break
-    elif turno>=8:
+    elif turno>=12:
         print("Tequedaste sin mivmientos, el raton ha escapado")
         break
 
@@ -122,6 +123,6 @@ while True:
     if (xr, yr) == (xg, yg):
         print("¡El gato atrapó al ratón! 🐱🏁")
         break
-    elif turno>=8:
+    elif turno>=12:
         print("Tequedaste sin mivmientos, el raton ha escapado")
         break
